@@ -1,10 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Update package lists and install Nginx
 sudo apt-get update
 sudo apt-get install -y nginx
 
 # Set up the directory structure
-sudo mkdir -p /data/web_static/releases/test /data/web_static/shared
+sudo mkdir -p /data/web_static/releases/test/
+sudo mkdir -p /data/web_static/shared/
+# sudo mkdir -p /data/web_static/releases/test /data/web_static/shared
 
 # Create a fake HTML file to test the Nginx configuration
 echo "<html>
